@@ -2,7 +2,7 @@ const validarTarjeta = (tipo, numero) => {
   let regepx
   switch (tipo) {
     case 1:
-      regepx = /^34[0-9]{13}/; 
+      regepx = /(^34[0-9]{13})|(^37[0-9]{13})/; 
       const resul = regepx.test(numero);
       return resul;
 
